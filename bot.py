@@ -1,5 +1,5 @@
 import requests, base64, random, os, hikari, lightbulb
-bot = lightbulb.BotApp("NzA4NzkxMjUyMjg3NzUwMTU0.Gir3zs.uYzFA3EBPbeLClIdG2gNPCPUvyTBNeX3mB1Dmg")
+bot = lightbulb.BotApp("")
 @bot.listen(hikari.StartedEvent)
 async def on_ready(event):
     print("Ready!")
