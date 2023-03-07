@@ -5,3 +5,4 @@ A bot to make those funny TikTok TTS voices using TikTok's API. *This is the onl
 
 This bot uses an unlimited API key so no manual key input is required.
 
+To use in your servers, replace with your own bot token in line 2.
