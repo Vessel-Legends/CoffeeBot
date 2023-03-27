@@ -9,24 +9,6 @@ async def on_join(event):
     print(f"Bot was added to a server with guild ID: {guild}")
 
 @bot.command
-@lightbulb.command("voices", "List of voices available by ID only.",)
-@lightbulb.implements(lightbulb.SlashCommand)
-async def voiceslist(ctx):
-    voicesavail = [
-        "[en_au_001] [EN]",
-        "[en_au_002] [EN]", 
-        "[en_uk_001] [EN]",
-        "[en_uk_002] [EN]",
-        "[en_us_001] [EN]",
-        "[en_female_emotional] [EN]",
-        "[es_mx_002] [EN, ES]",
-        "[br_001] [EN, PT]",
-        "[en_female_madam_leota] [EN]",
-        "[en_male_ghosthost] [EN]"]
-    await ctx.respond(f"{voicesavail}\n\nMore voices might be added and some might be premium, I havent decided.")
-    await ctx.respond("Once you have the ID selected, run **'/tts [text] [speaker]'**")
-
-@bot.command
 @lightbulb.option("debuginfo", "Prints debug.", required=False, type=bool)
 @lightbulb.option("speaker", "The speaker. MUST BE AN ID! Run '/voices' for the ID.", type=str, required=True, choices=["en_au_001", "en_au_002", "en_uk_001", "en_uk_002", "en_us_001", "en_female_emotional", "es_mx_002", "br_001", "en_female_madam_leota", "en_male_ghosthost"])
 @lightbulb.option("text", "The text to generate.", type=str)
